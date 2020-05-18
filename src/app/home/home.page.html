@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="cont">
+      Charts
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="cont">
+  <h1 id="h">Welcome to Charts</h1><br>
+  <h2></h2>
+  <ion-button (click)="DayBtn()">Day</ion-button><ion-button (click)="MonthBtn()">Monthly</ion-button><br>
+  <ion-button (click)="RefreshBtn()">Refresh the Data</ion-button>
+</div>
+<div class="cont">
+  <ion-card>
+    <ion-card-header>
+      Doughnut Chart
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #doughnutCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+</div>
+<div>
+  <ion-card>
+    <ion-card-header>
+      Bar Chart
+    </ion-card-header>
+    <ion-card-content >
+      <canvas #barChart></canvas>
+    </ion-card-content>
+  </ion-card>
+</div>
+
+</ion-content>

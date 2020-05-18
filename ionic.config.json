@@ -1,0 +1,8 @@
+{
+  "name": "charts",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
